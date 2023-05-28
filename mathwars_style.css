@@ -1,0 +1,173 @@
+body {
+  height: 100vh;
+  text-align: center;
+  background-image: url("fig/bg.png"); /* 背景画像を設定 */
+  background-repeat: no-repeat; /* 繰り返し表示しない */
+  background-size: cover; /* 画面に合わせて拡大・縮小 */
+  color:rgb(50,50,50);
+}
+
+button{
+  font-size: 4vw;
+  color: rgb(50,50,50);
+}
+
+#title{
+  font-size: 5vw;
+}
+
+#startBtn{
+  /* background-color: blue;
+  color: red; */
+  width: 25vw;
+  height: 6vw;
+  position: absolute;
+  top: 12vw; 
+  left: 0;
+  right: 0;
+  margin: auto;
+  /* font-size: 4vw; */
+}
+
+/* #game {
+  height: 20vh;
+  /* text-align: center; */
+  /* margin-top: 50vh; */
+/*}*/ 
+
+#gameTimer{ /*ゲーム開始後のカウントダウン */
+  font-size: 3vw;
+  /* text-align: center; */
+  position: absolute;
+  top: 3vw; 
+  left: 0;
+  right: 40vw;
+  margin: auto;
+}
+
+#countdown { /*最初の3秒のカウントダウン */
+  font-size: 3vw;
+  /* text-align: center; */
+  position: absolute;
+  top: 3vw; 
+  left: 0;
+  right: 40vw;
+  margin: auto;
+}
+
+#question {
+  font-size: 5vw;
+  text-align: center;
+  position: absolute;
+  top: 11vw; 
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#answer {
+  font-size: 5vw;
+  text-align: center;
+  position: absolute;
+  top: 20vw; 
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 50vw;
+}
+
+#indexButton{
+  font-size: 20vw;
+  text-align: center;
+  position: absolute;
+  top: 28vw; 
+  left: 0;
+  right: 0;
+  margin: auto;
+  /* width: 100vw; */
+}
+
+#easy{
+  /* background-color: blue;
+  color: red; */
+  width: 25vw;
+  height: 6vw;
+  position: absolute;
+  top: 12vw; 
+  /* left: 37.5vw; */
+  left: 0;
+  right: 0;
+  margin: auto;
+  /* font-size: 4vw; */
+}
+
+#hard {
+  /* background-color: blue;
+  color: red; */
+  width: 25vw;
+  height: 6vw;
+  position: absolute;
+  top: 20vw; 
+  left: 0;
+  right: 0;
+  margin: auto;
+  /* font-size: 4vw; */
+}
+
+
+#shareBtn {
+  /* background-color: blue;
+  color: red; */
+  width: 36vw;
+  height: 6vw;
+  position: absolute;
+  top: 12vw; 
+  left: 0;
+  right: 0;
+  margin: auto;
+  /* font-size: 4vw; */
+}
+
+#playAgainBtn {
+  /* background-color: green;
+  color: yellow; */
+  width: 36vw;
+  height: 6vw;
+  position: absolute;
+  top: 20vw; 
+  left: 0;
+  right: 0;
+  margin: auto;
+  /* font-size: 4vw; */
+}
+
+#backToTheBeginningBtn{
+  /* background-color: grey;
+  color: lightblue; */
+  width: 36vw;
+  height: 6vw;
+  position: absolute;
+  top: 28vw; 
+  left: 0;
+  right: 0;
+  margin: auto;
+  /* font-size: 4vw; */
+}
+
+#score {
+  font-size: 3vw;
+  position: absolute;
+  top: 3vw; 
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#finalScore{
+  font-size: 4vw;
+  position: absolute;
+  top: 3vw; 
+  left: 0;
+  right: 0;
+  margin: auto;
+}

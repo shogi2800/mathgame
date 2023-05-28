@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>計算問題ゲーム</title>
+    <link rel="stylesheet" href="mathwars_style.css">
+  </head>
+  <body>
+    <h1 id="title">計算問題ゲーム</h1>
+    <button id="startBtn" onclick="displayDifficultyButtons()">ゲーム開始</button>
+    <div id="difficultyButtons" style="display: none;">
+      <button id="easy" onclick="startGame('easy')">簡単</button>
+      <button id="hard"onclick="startGame('hard')">難しい</button>
+    </div>
+    <div id="game" style="display: none;">
+      <h1 id="question"></h1>
+      <input id="answer" placeholder="解答を入力してね" onkeydown="if (event.keyCode === 13) checkAnswer()" autofocus disabled>
+      <div id="indexButton">
+        <button onclick="enterNumber('1')">1</button>
+        <button onclick="enterNumber('2')">2</button>
+        <button onclick="enterNumber('3')">3</button>
+        <br>
+        <button onclick="enterNumber('4')">4</button>
+        <button onclick="enterNumber('5')">5</button>
+        <button onclick="enterNumber('6')">6</button>
+        <br>
+        <button onclick="enterNumber('7')">7</button>
+        <button onclick="enterNumber('8')">8</button>
+        <button onclick="enterNumber('9')">9</button>
+        <br>
+        <!-- <button onclick="eraseLastCharacter()">Backspace</button> -->
+        <button onclick="enterNumber('-')">-</button>
+        <button onclick="checkAnswer()">Enter</button>
+      </div>
+      
+      <p id="score">スコア: 0</p>
+      <h2 id="gameTimer"></h2>
+    </div>
+    <h2 id="countdown"></h2>
+    <h2 id="finalScore" style="display: none;"></h2>
+    <button id="shareBtn" style="display: none;" onclick="shareScoreOnTwitter()">Twitterで共有する</button>
+    <button id="playAgainBtn" style="display: none;" onclick="playAgain()">もう一度遊ぶ</button>
+    <button id="backToTheBeginningBtn" style="display: none;" onclick="backToTheBeginning()">最初に戻る</button>
+
+    <script src="mathwars_script.js"></script>
+  </body>
+</html>
